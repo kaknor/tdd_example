@@ -1,0 +1,2 @@
+class Mdr:
+    pass
