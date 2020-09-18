@@ -1,4 +1,4 @@
-from src.money import Dollar
+from src.dollar import Dollar
 from src.franc import Franc
 
 def test_multiplication():
@@ -14,3 +14,5 @@ def test_franc_multiplication():
 def test_equality():
     assert Dollar(5) == Dollar(5)
     assert Dollar(5) != Dollar(6)
+    assert Franc(5) == Franc(5)
+    assert Franc(5) != Franc(6)

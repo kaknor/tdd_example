@@ -1,6 +1,8 @@
-class Franc:
+from src.money import Money
+
+class Franc(Money):
     def __init__(self, amount) -> None:
-        self._amount = amount
+        super(Franc, self).__init__(amount)
 
     # As we are using Python3 no need to implement __ne__ as __ne__ is calling __eq__.
     def __eq__(self, o: object) -> bool:
