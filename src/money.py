@@ -16,11 +16,7 @@ class Money:
         return Money(multiplier * self._amount, self.currency)
 
     def dollar(amount: int):
-        from src.dollar import Dollar
-
-        return Dollar(amount)
+        return Money(amount, "USD")
 
     def franc(amount: int):
-        from src.franc import Franc
-
-        return Franc(amount)
+        return Money(amount, "CHF")
