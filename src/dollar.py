@@ -1,6 +1,4 @@
 from src.money import Money
-from typing import Type
-from src.money import Money
 
 class Dollar(Money):
     def __init__(self, amount) -> None:

@@ -1,3 +1,4 @@
+
 class Money:
     def __init__(self, amount) -> None:
         self._amount = amount
@@ -7,3 +8,13 @@ class Money:
         if isinstance(o, self.__class__):
             return o._amount == self._amount
         return False
+    
+    def dollar(amount: int):
+        from src.dollar import Dollar
+
+        return Dollar(amount)
+
+    def franc(amount: int):
+        from src.franc import Franc
+
+        return Franc(amount)
