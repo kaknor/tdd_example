@@ -2,7 +2,7 @@ from src.money import Money
 
 class Dollar(Money):
     def __init__(self, amount) -> None:
-        super(Dollar, self).__init__(amount)
+        super(Dollar, self).__init__(amount, "USD")
 
     def times(self, multiplier: int ):
-        return Dollar(multiplier * self._amount)
+        return Money.dollar(multiplier * self._amount)
